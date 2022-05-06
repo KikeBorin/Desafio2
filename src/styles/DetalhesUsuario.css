@@ -1,0 +1,33 @@
+#fonteDetalhesUsuario{
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerr {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detalhes-usuario {
+    padding: 1.5rem;
+    width: 890px;
+    max-width: 1120px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile-img {
+    width: 350px;
+}
+
+@media (max-width: 840px) {
+    .containerr {
+        margin: 2.5rem;
+    }
+    .detalhes-usuario {
+        flex-direction: column;
+    }
+}
