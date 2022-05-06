@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import imagem from '../Imagem/usuarioNaoEncontrado.png';
 
 //para receber o que o App ta mandando
 function RetornoPesquisa(props) {
@@ -35,10 +36,13 @@ function RetornoPesquisa(props) {
         )}
 
         {props.dados.message && (
-          <h2>Usuario não encontrado!</h2>
+          <>
+            <img src={imagem} class="img-fluid" alt="Responsive image"></img>
+          </>
         )}
 
       </div>
+
     </div>
 
   );
